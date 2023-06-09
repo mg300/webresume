@@ -1,0 +1,30 @@
+.title {
+  font-size: 3rem;
+}
+.main {
+  margin-top: 15rem;
+  vertical-align: center;
+  height: auto;
+  display: flex;
+  top: 50%;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadein 2s;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.subtitle {
+  color: grey;
+}
+.description {
+  margin-top: 1.5rem;
+  background-color: white;
+  opacity: 0.9;
+}

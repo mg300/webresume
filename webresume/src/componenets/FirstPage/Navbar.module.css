@@ -1,0 +1,71 @@
+.navbar {
+  display: flex;
+  height: 4rem;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 90%;
+  align-items: center;
+  font-family: "Monomaniac One", sans-serif;
+  position: fixed;
+}
+@media screen and (min-width: 90rem) {
+  .navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90rem;
+    width: 90rem;
+  }
+}
+.logo {
+  font-size: 2.5rem;
+  opacity: 0.9;
+  background-color: white;
+  letter-spacing: 0.1rem;
+  animation: fromleft 1s;
+}
+@keyframes fromleft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes fromright {
+  from {
+    transform: translateX(30%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.logo span {
+  color: #19a7ce;
+  font-size: 1.8rem;
+}
+.logo-big {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 18rem;
+  line-height: 12rem;
+  opacity: 0.9;
+  background-color: white;
+  letter-spacing: 1rem;
+}
+.logo-big span {
+  color: #19a7ce;
+  font-size: 13rem;
+}
+
+.menu {
+  display: flex;
+  gap: 3rem;
+  font-size: 1.2em;
+  animation: fromright 1s;
+}
+.menu-el {
+  text-decoration: none;
+  background-color: white;
+  color: inherit;
+  opacity: 0.9;
+}

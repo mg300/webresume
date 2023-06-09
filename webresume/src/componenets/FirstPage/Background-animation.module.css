@@ -1,0 +1,40 @@
+.background {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+}
+.line {
+  width: 3px;
+  height: 400px;
+  background-color: #19a7ce;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(250s / var(--var));
+}
+.line:nth-child(even) {
+  background-color: black;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(100vh) scale(0.1);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-400px) scale(0.8);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .line:nth-child(-n + 15) {
+    display: none;
+  }
+}

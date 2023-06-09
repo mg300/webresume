@@ -1,0 +1,62 @@
+.pageDown {
+  width: 100vw;
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.arrow {
+  align-items: center;
+  background-color: rgba(255, 255, 255 0);
+  width: 3rem;
+  height: 3rem;
+  border: 0.4rem solid;
+  border-color: transparent black black transparent;
+  transform: rotate(45deg);
+  animation: arrowOnLoad 2s;
+}
+
+.button {
+  cursor: pointer;
+  opacity: 0.9;
+  border: none;
+  padding: 1rem;
+  background-color: #ffffffcd;
+  border-radius: 2rem;
+}
+.hidden,
+.hidden2 {
+  display: none;
+}
+.button:hover .hidden {
+  display: inherit;
+  animation: anime 1.5s;
+}
+.button:hover .hidden2 {
+  display: inherit;
+  animation: anime2 1.5s;
+}
+@keyframes anime {
+  0% {
+    transform: translateY(-3.3rem) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0rem) rotate(45deg);
+  }
+}
+@keyframes anime2 {
+  0% {
+    transform: translateY(-6.3rem) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0rem) rotate(45deg);
+  }
+}
+@keyframes arrowOnLoad {
+  0% {
+    transform: translateY(-4.3rem) rotate(45deg);
+  }
+  100% {
+    transform: translateY(0rem) rotate(45deg);
+  }
+}
