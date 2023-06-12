@@ -1,0 +1,28 @@
+.logo span {
+  color: #19a7ce;
+  font-size: 1.8rem;
+}
+.logo-big {
+  font-family: "Monomaniac One", sans-serif;
+  font-size: 18rem;
+  line-height: 12rem;
+  opacity: 0.9;
+  background-color: white;
+  letter-spacing: 1rem;
+}
+.logo-big span {
+  color: #19a7ce;
+  font-size: 13rem;
+}
+.logo {
+  font-size: 2.5rem;
+  opacity: 0.9;
+  background-color: white;
+  letter-spacing: 0.1rem;
+  animation: fromleft 1s;
+}
+.logo-big a,
+.logo a {
+  text-decoration: none;
+  color: black;
+}

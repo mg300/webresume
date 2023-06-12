@@ -1,9 +1,11 @@
 import React from "react";
-import css from "./Navbar.module.css";
+import css from "./Logo.module.css";
 const Logo = ({ classname }) => {
   return (
     <div className={css[classname]}>
-      M<span>G</span>
+      <a href="/">
+        M<span>G</span>
+      </a>
     </div>
   );
 };

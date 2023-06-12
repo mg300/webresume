@@ -1,0 +1,43 @@
+.title {
+  font-size: 4rem;
+  font-family: "Monomaniac One", sans-serif;
+  grid-column-start: 2;
+}
+.about {
+  grid-template-columns: 1fr max(55rem) 1fr;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadein 2s;
+}
+.main {
+  display: flex;
+  grid-column-start: 2;
+  gap: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(246, 246, 246, 0.9) 100%
+  );
+  padding: 2rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 3px 0px 8px -4px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 3px 0px 8px -4px rgba(66, 68, 90, 1);
+  box-shadow: 3px 0px 8px -4px rgba(66, 68, 90, 1);
+}
+.main img {
+  width: 15rem;
+  border-radius: 15rem;
+}
+.main p {
+  align-self: center;
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+}
+.imgs img {
+  width: 4rem;
+  border-radius: 0;
+  margin: 2rem 0 0 2rem;
+}

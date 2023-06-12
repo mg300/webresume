@@ -1,8 +1,8 @@
 .title {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: "Monomaniac One", sans-serif;
 }
-.main {
-  height: auto;
+.ProjectPage {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -21,12 +21,6 @@
   color: grey;
 }
 .description {
-  margin-top: 1.5rem;
   background-color: white;
   opacity: 0.9;
-}
-@media only screen and (max-width: 700px) {
-  body {
-    font-size: 10px;
-  }
 }

@@ -18,4 +18,5 @@ code {
   bottom: 0;
   padding: 0;
   right: 0;
+  box-sizing: border-box;
 }

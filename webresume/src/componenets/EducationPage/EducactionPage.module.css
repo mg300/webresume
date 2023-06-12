@@ -1,0 +1,11 @@
+.EducationPage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadein 2s;
+}
+.title {
+  font-size: 4rem;
+  font-family: "Monomaniac One", sans-serif;
+}

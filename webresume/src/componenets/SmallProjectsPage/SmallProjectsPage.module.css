@@ -1,0 +1,18 @@
+.title {
+  font-size: 4rem;
+  font-family: "Monomaniac One", sans-serif;
+  grid-column-start: 2;
+}
+.smallProjectsPage {
+  grid-template-columns: 1fr auto 1fr;
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadein 2s;
+}
+.main {
+  display: flex;
+  grid-column-start: 2;
+  justify-self: center;
+  gap: 1rem;
+}
