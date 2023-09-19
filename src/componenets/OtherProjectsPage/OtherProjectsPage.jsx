@@ -1,5 +1,5 @@
 import React from "react";
-import css from "./SmallProjectsPage.module.css";
+import css from "./OtherProjectsPage.module.css";
 import ProjectElement from "./ProjectElement";
 import img from "../Images/mines.png";
 const SmallProjectsPage = () => {

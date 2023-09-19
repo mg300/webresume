@@ -3,96 +3,82 @@ import {
   ScrollContainer,
   ScrollPage,
   batch,
-  Fade,
-  FadeIn,
-  FadeOut,
-  Move,
-  MoveIn,
-  MoveOut,
   Sticky,
-  StickyIn,
-  StickyOut,
-  Zoom,
-  ZoomIn,
-  ZoomOut,
 } from "react-scroll-motion";
 import "./App.css";
 import FirstPage from "./componenets/FirstPage/FirstPage";
 import ProjectPage from "./componenets/ProjectPage/ProjectPage";
 import EducationPage from "./componenets/EducationPage/EducationPage";
-import SmallProjectsPage from "./componenets/SmallProjectsPage/SmallProjectsPage";
+import SmallProjectsPage from "./componenets/OtherProjectsPage/OtherProjectsPage";
 import React from "react";
-import { useEffect, useState } from "react";
 import About from "./componenets/About/About";
 
-export const useScrollPosition = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-
-  useEffect(() => {
-    const updatePosition = () => {
-      setScrollPosition(document.documentElement.scrollTop);
-    };
-
-    window.addEventListener("scroll", updatePosition);
-
-    updatePosition();
-
-    return () => window.removeEventListener("scroll", updatePosition);
-  }, []);
-  return scrollPosition;
-};
-
 function Animations() {
-  const scrollPosition = useScrollPosition();
-
+  const moveOutY = () => ({
+    out: {
+      style: {
+        opacity: (value) => 1.2 - value,
+        transform: (p) => {
+          if (p < 0.1) return;
+          return `translateY(${(-p + 0.1) * 1000}px)`;
+        },
+        display: (value) => {
+          if (value > 0.2) return "inherit";
+        },
+      },
+    },
+  });
+  const moveInY = () => ({
+    in: {
+      style: {
+        opacity: (value) => value * 2 - 0.6,
+        display: (value) => {
+          if (value <= 0.2) return "none";
+        },
+      },
+    },
+  });
   return (
-    <div>
+    <>
       <ScrollContainer>
         <ScrollPage>
-          <div
-            style={{
-              display: `${scrollPosition > 870 ? "none" : "inherit"}`,
-            }}
-          >
-            <Animator animation={batch(Sticky(), MoveOut(0, -1000))}>
+          <>
+            <Animator animation={batch(Sticky(), moveOutY())}>
               <FirstPage></FirstPage>
             </Animator>
-          </div>
+          </>
         </ScrollPage>
         <ScrollPage>
-          <div
-            style={{
-              display: `${scrollPosition < 250 ? "none" : "inherit"}`,
-            }}
-          >
-            <Animator animation={batch()}>
+          <>
+            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
               <ProjectPage></ProjectPage>
             </Animator>
-          </div>
+          </>
         </ScrollPage>
         <ScrollPage>
-          <div>
-            <Animator animation={batch()}>
+          <>
+            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
               <EducationPage></EducationPage>
             </Animator>
-          </div>
+          </>
         </ScrollPage>
         <ScrollPage>
-          <div>
-            <Animator animation={batch()}>
+          <>
+            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
               <SmallProjectsPage></SmallProjectsPage>
             </Animator>
-          </div>
+          </>
         </ScrollPage>
         <ScrollPage>
-          <div>
-            <Animator animation={batch(Zoom())}>
+          <>
+            <Animator animation={batch(Sticky(), moveInY())}>
               <About></About>
             </Animator>
-          </div>
+          </>
         </ScrollPage>
       </ScrollContainer>
-    </div>
+    </>
   );
 }
+
 export default Animations;
