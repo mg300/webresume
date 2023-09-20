@@ -1,0 +1,17 @@
+.title {
+  font-size: 4rem;
+  font-family: "Monomaniac One", sans-serif;
+}
+.ProjectPage {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+.subtitle {
+  color: grey;
+}
+.description {
+  background-color: white;
+  opacity: 0.9;
+}

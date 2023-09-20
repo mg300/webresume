@@ -7,7 +7,8 @@ import {
 } from "react-scroll-motion";
 import "./App.css";
 import FirstPage from "./componenets/FirstPage/FirstPage";
-import ProjectPage from "./componenets/ProjectPage/ProjectPage";
+import MinesweeperPage from "./componenets/MinesweeperPage/MinesweeperPage";
+import GsklepPage from "./componenets/GsklepPage/GsklepPage";
 import EducationPage from "./componenets/EducationPage/EducationPage";
 import SmallProjectsPage from "./componenets/OtherProjectsPage/OtherProjectsPage";
 import React from "react";
@@ -51,7 +52,14 @@ function Animations() {
         <ScrollPage>
           <>
             <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
-              <ProjectPage></ProjectPage>
+              <MinesweeperPage></MinesweeperPage>
+            </Animator>
+          </>
+        </ScrollPage>
+        <ScrollPage>
+          <>
+            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+              <GsklepPage></GsklepPage>
             </Animator>
           </>
         </ScrollPage>
