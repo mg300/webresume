@@ -5,7 +5,6 @@ import {
   batch,
   Sticky,
 } from "react-scroll-motion";
-import "./App.css";
 import FirstPage from "./componenets/FirstPage/FirstPage";
 import MinesweeperPage from "./componenets/MinesweeperPage/MinesweeperPage";
 import GsklepPage from "./componenets/GsklepPage/GsklepPage";
@@ -63,17 +62,18 @@ function Animations() {
             </Animator>
           </>
         </ScrollPage>
+
         <ScrollPage>
           <>
             <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
-              <EducationPage></EducationPage>
+              <SmallProjectsPage></SmallProjectsPage>
             </Animator>
           </>
         </ScrollPage>
         <ScrollPage>
           <>
             <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
-              <SmallProjectsPage></SmallProjectsPage>
+              <EducationPage></EducationPage>
             </Animator>
           </>
         </ScrollPage>

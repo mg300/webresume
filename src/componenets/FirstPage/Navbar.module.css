@@ -43,8 +43,18 @@
   animation: fromright 1s;
 }
 .menu-el {
-  text-decoration: none;
+  all: unset;
   background-color: white;
   color: inherit;
   opacity: 0.9;
+  cursor: pointer;
+}
+.menu-el:hover {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+  transform: translateY(-2px);
+}
+
+.menu-el:active {
+  box-shadow: none;
+  transform: translateY(0);
 }

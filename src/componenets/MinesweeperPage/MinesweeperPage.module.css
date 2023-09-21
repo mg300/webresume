@@ -9,9 +9,14 @@
   gap: 2rem;
 }
 .subtitle {
-  color: grey;
+  color: rgb(105, 105, 105);
+  margin-bottom: 1rem;
 }
 .description {
   background-color: white;
   opacity: 0.9;
+  width: 20rem;
+}
+.img {
+  width: 20rem;
 }

@@ -4,14 +4,13 @@ import gsklepImage from "../Images/gsklep.png";
 import Button from "../Button/Button";
 const ProjectPage = () => {
   return (
-    <div className={css.ProjectPage}>
+    <div id="gsklep" className={css.ProjectPage}>
       <div className={css.description}>
         <div className={css.title}>Gsklep</div>
         <div className={css.subtitle}>
-          Online shops Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Veritatis repellendus quis suscipit architecto autem officia velit ex
-          pariatur, at, saepe nobis explicabo modi delectus ad blanditiis. Nihil
-          voluptatem minus tenetur.
+          Comprehensive E-Commerce Store Application is developed using
+          TypeScript, React, and Sass on the frontend, is powered by Node.js
+          with Express, Mongoose, MongoDB on the backend.
         </div>
         <Button
           type="github"
@@ -19,11 +18,7 @@ const ProjectPage = () => {
         />
         <Button type="live" url="" />
       </div>
-      <img
-        style={{ width: "30rem" }}
-        src={gsklepImage}
-        alt="img should be here"
-      ></img>
+      <img className={css.img} src={gsklepImage} alt="img should be here"></img>
     </div>
   );
 };

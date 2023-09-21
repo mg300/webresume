@@ -3,9 +3,16 @@ import css from "./Logo.module.css";
 const Logo = ({ classname }) => {
   return (
     <div className={css[classname]}>
-      <a href="/">
+      <p
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }}
+      >
         M<span>G</span>
-      </a>
+      </p>
     </div>
   );
 };

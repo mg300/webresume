@@ -20,9 +20,19 @@
   background-color: white;
   letter-spacing: 0.1rem;
   animation: fromleft 1s;
+  cursor: pointer;
 }
 .logo-big a,
 .logo a {
   text-decoration: none;
   color: black;
+}
+.logo:hover {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+  transform: translateY(-2px);
+}
+
+.logo:active {
+  box-shadow: none;
+  transform: translateY(0);
 }
