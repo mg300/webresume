@@ -13,7 +13,12 @@ const FirstPage = () => {
       </div>
       <div className={css.pageDown}>
         <button
-          onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}
+          onClick={() =>
+            window.scrollTo({
+              top: document.body.scrollHeight / 6,
+              behavior: "smooth",
+            })
+          }
           className={css.button}
         >
           <div className={css.arrow}></div>
