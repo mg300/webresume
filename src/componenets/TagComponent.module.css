@@ -1,0 +1,18 @@
+.tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0.2em 0.5em 0.3em;
+  border-radius: 2px;
+  background: var(--tag-bg);
+  color: var(--text-color);
+  font-weight: 600;
+  margin: 0.25em 0.15em;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  box-shadow: 1rem;
+  -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+  color: rgb(0, 0, 0);
+  opacity: 1;
+}

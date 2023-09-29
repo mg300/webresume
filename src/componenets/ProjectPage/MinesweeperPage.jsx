@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import css from "./MinesweeperPage.module.css";
+import css from "./ProjectPage.module.css";
+
 import minesweeper1 from "../Images/mines.png";
 import minesweeper2 from "../Images/mines2.png";
 import minesweeper3 from "../Images/mines3.png";
 import Button from "../Button/Button";
+import TagComponent from "../TagComponent";
 
 let intervalId;
 const ProjectPage = () => {
@@ -26,15 +28,14 @@ const ProjectPage = () => {
       <div className={css.description}>
         <div className={css.title}>Minesweeper</div>
         <div className={css.subtitle}>
-          Minesweeper is a logic game that originated in 1981. Since then, it
-          has been available in every version of the Windows operating system.
-          This version is a JavaScript version that allows gameplay for users
-          with different operating systems such as Mac OS, Linux, and Unix.
+          Minesweeper is a logic game that originated in 1981. Since then, it has been available in every version of the
+          Windows operating system. This version is a JavaScript version that allows gameplay for users with different
+          operating systems such as Mac OS, Linux, and Unix.
         </div>
-        <Button
-          type="github"
-          url="https://github.com/MateuszG2000/minesweeper"
-        />
+        <TagComponent bgColor="#F0DB4F">Javascript</TagComponent>
+        <TagComponent bgColor="#264de4">CSS</TagComponent>
+        <TagComponent bgColor="#e34c26">HTML</TagComponent>
+        <Button type="github" url="https://github.com/MateuszG2000/minesweeper" />
         <Button type="live" url="https://minesweeper.gjda.pl" />
       </div>
       <img

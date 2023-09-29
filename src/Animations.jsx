@@ -1,13 +1,7 @@
-import {
-  Animator,
-  ScrollContainer,
-  ScrollPage,
-  batch,
-  Sticky,
-} from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch, Sticky } from "react-scroll-motion";
 import FirstPage from "./componenets/FirstPage/FirstPage";
-import MinesweeperPage from "./componenets/MinesweeperPage/MinesweeperPage";
-import GsklepPage from "./componenets/GsklepPage/GsklepPage";
+import MinesweeperPage from "./componenets/ProjectPage/MinesweeperPage";
+import GsklepPage from "./componenets/ProjectPage/GsklepPage";
 import EducationPage from "./componenets/EducationPage/EducationPage";
 import SmallProjectsPage from "./componenets/OtherProjectsPage/OtherProjectsPage";
 import React from "react";
@@ -48,13 +42,7 @@ function Animations() {
             </Animator>
           </>
         </ScrollPage>
-        <ScrollPage>
-          <>
-            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
-              <MinesweeperPage></MinesweeperPage>
-            </Animator>
-          </>
-        </ScrollPage>
+
         <ScrollPage>
           <>
             <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
@@ -62,7 +50,13 @@ function Animations() {
             </Animator>
           </>
         </ScrollPage>
-
+        <ScrollPage>
+          <>
+            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+              <MinesweeperPage></MinesweeperPage>
+            </Animator>
+          </>
+        </ScrollPage>
         <ScrollPage>
           <>
             <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
