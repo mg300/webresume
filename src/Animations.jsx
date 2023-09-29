@@ -73,7 +73,7 @@ function Animations() {
         </ScrollPage>
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveInY())}>
+            <Animator style={{ height: "10px" }} animation={batch(moveInY())}>
               <About></About>
             </Animator>
           </>

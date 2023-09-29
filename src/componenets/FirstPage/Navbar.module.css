@@ -3,20 +3,14 @@
   height: 4rem;
   justify-content: space-between;
   margin-right: auto;
+  max-width: 90rem;
+  max-width: 90rem;
   margin-left: auto;
   max-width: 90%;
   align-items: center;
   font-family: "Monomaniac One", sans-serif;
   position: fixed;
   z-index: 1;
-}
-@media screen and (min-width: 90rem) {
-  .navbar {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90rem;
-    width: 90rem;
-  }
 }
 
 @keyframes fromleft {

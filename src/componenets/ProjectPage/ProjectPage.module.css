@@ -17,6 +17,7 @@
   background-color: white;
   opacity: 0.9;
   max-width: 23rem;
+  min-width: 20rem;
 }
 .img {
   width: 22rem;
