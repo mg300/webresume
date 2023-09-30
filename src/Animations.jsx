@@ -13,11 +13,10 @@ function Animations() {
       style: {
         opacity: (value) => 1.2 - value,
         transform: (p) => {
-          if (p < 0.1) return;
-          return `translateY(${(-p + 0.1) * 1000}px)`;
+          return `translateY(${p}px)`;
         },
         display: (value) => {
-          if (value > 0.2) return "inherit";
+          return "inherit";
         },
       },
     },
@@ -37,7 +36,7 @@ function Animations() {
       <ScrollContainer>
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveOutY())}>
+            <Animator animation={moveOutY}>
               <FirstPage></FirstPage>
             </Animator>
           </>
@@ -45,35 +44,35 @@ function Animations() {
 
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+            <Animator animation={batch(moveInY(), moveOutY())}>
               <GsklepPage></GsklepPage>
             </Animator>
           </>
         </ScrollPage>
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+            <Animator animation={batch(moveInY(), moveOutY())}>
               <MinesweeperPage></MinesweeperPage>
             </Animator>
           </>
         </ScrollPage>
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+            <Animator animation={batch(moveInY(), moveOutY())}>
               <SmallProjectsPage></SmallProjectsPage>
             </Animator>
           </>
         </ScrollPage>
         <ScrollPage>
           <>
-            <Animator animation={batch(Sticky(), moveInY(), moveOutY())}>
+            <Animator animation={batch(moveInY(), moveOutY())}>
               <EducationPage></EducationPage>
             </Animator>
           </>
         </ScrollPage>
         <ScrollPage>
           <>
-            <Animator style={{ height: "10px" }} animation={batch(moveInY())}>
+            <Animator style={{ height: "10px" }} animation={moveInY()}>
               <About></About>
             </Animator>
           </>

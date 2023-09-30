@@ -8,30 +8,32 @@ import TagComponent from "../TagComponent";
 const SmallProjectsPage = () => {
   return (
     <div className={css.smallProjectsPage}>
-      <p className={css.title}>Other projects</p>
-      <div className={css.main}>
-        <ProjectElement url="https://github.com/mg300/Assembly-Hex-Converter" img={assembly1} title="Hex Converter">
-          From HEX to DEC, BIN, OCT
-          <TagComponent color="white" marginTop="1rem" bgColor="#202020">
-            Assembly Language
-          </TagComponent>
-        </ProjectElement>
-        <ProjectElement
-          url="https://github.com/mg300/Assembly-SimpsonsRule-Numerical-Integration"
-          img={assembly2}
-          title="Simpson's Rule Calc"
-        >
-          Numerical Integration cos<sup>2</sup> x
-          <TagComponent marginTop="1rem" color="white" bgColor="#202020">
-            Assembly Language
-          </TagComponent>
-        </ProjectElement>
-        <ProjectElement url="https://github.com/mg300/Steganography" img={stegano} title="Steganography">
-          Hide text in image<br></br>
-          <TagComponent marginTop="1rem" color="white" bgColor="#202020">
-            Python
-          </TagComponent>
-        </ProjectElement>
+      <div>
+        <div className={css.title}>Other projects</div>
+        <div className={css.main}>
+          <ProjectElement url="https://github.com/mg300/Assembly-Hex-Converter" img={assembly1} title="Hex Converter">
+            From HEX to DEC, BIN, OCT
+            <TagComponent color="white" marginTop="1rem" bgColor="#202020">
+              Assembly Language
+            </TagComponent>
+          </ProjectElement>
+          <ProjectElement
+            url="https://github.com/mg300/Assembly-SimpsonsRule-Numerical-Integration"
+            img={assembly2}
+            title="Simpson's Rule Calc"
+          >
+            Numerical Integration cos<sup>2</sup> x
+            <TagComponent marginTop="1rem" color="white" bgColor="#202020">
+              Assembly Language
+            </TagComponent>
+          </ProjectElement>
+          <ProjectElement url="https://github.com/mg300/Steganography" img={stegano} title="Steganography">
+            Hide text in image<br></br>
+            <TagComponent marginTop="1rem" color="white" bgColor="#202020">
+              Python
+            </TagComponent>
+          </ProjectElement>
+        </div>
       </div>
     </div>
   );

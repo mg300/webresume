@@ -4,13 +4,17 @@
 .title {
   font-size: 3rem;
 }
-.main {
-  height: auto;
+.FirstPage {
+  margin-top: 10rem;
+  min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+.main {
+  display: flex;
   animation: fadein 2s;
+  justify-content: center;
 }
 @keyframes fadein {
   from {

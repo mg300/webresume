@@ -39,7 +39,7 @@ const ProjectPage = () => {
           Bcrypt
         </TagComponent>
         <TagComponent color="white" bgColor="#202020">
-          Cors
+          CORS
         </TagComponent>
 
         <Button type="github" url="https://github.com/MateuszG2000/gmarktshop" />

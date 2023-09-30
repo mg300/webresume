@@ -5,9 +5,11 @@
 }
 .ProjectPage {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   gap: 2rem;
+  position: fixed;
+  height: 100vh;
 }
 .subtitle {
   color: rgb(105, 105, 105);
