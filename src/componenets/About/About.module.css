@@ -22,9 +22,9 @@
   -moz-box-shadow: 3px 0px 8px -4px rgba(66, 68, 90, 1);
   box-shadow: 3px 0px 8px -4px rgba(66, 68, 90, 1);
 }
-.main img {
+.selfie {
   width: 15rem;
-  border-radius: 15rem;
+  border-radius: 5rem;
   height: max-content;
 }
 .main p {
@@ -64,5 +64,14 @@
   }
   .main {
     box-shadow: none;
+  }
+  .imgs img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .selfie {
+    height: 15rem;
+    width: auto;
+    border-radius: 1rem;
   }
 }

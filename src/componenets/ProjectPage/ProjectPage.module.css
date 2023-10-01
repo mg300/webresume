@@ -27,3 +27,15 @@
   -moz-box-shadow: 0px 0px 17px -4px rgba(66, 68, 90, 1);
   box-shadow: 0px 0px 17px -4px rgba(66, 68, 90, 1);
 }
+@media (width<800px) {
+  .ProjectPage {
+    position: static;
+    height: auto;
+    margin-bottom: 4rem;
+  }
+}
+@media (width<700px) {
+  .ProjectPage {
+    flex-direction: column;
+  }
+}

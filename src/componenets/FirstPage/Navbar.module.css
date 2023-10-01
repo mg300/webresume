@@ -6,7 +6,8 @@
   max-width: 90rem;
   max-width: 90rem;
   margin-left: auto;
-  max-width: 90%;
+  width: 100%;
+  padding: 0 2rem;
   align-items: center;
   font-family: "Monomaniac One", sans-serif;
   position: fixed;
@@ -51,4 +52,9 @@
 .menu-el:active {
   box-shadow: none;
   transform: translateY(0);
+}
+@media (width<800px) {
+  .navbar {
+    background-color: white;
+  }
 }

@@ -32,11 +32,6 @@
   background-color: white;
   opacity: 0.9;
 }
-@media only screen and (max-width: 700px) {
-  body {
-    font-size: 10px;
-  }
-}
 /*arrow*/
 .pageDown {
   margin-top: 10rem;
@@ -97,5 +92,13 @@
   }
   100% {
     transform: translateY(0rem) rotate(45deg);
+  }
+}
+@media (width<800px) {
+  .title {
+    font-size: 2rem;
+  }
+  .main {
+    padding: 0 0.5rem;
   }
 }

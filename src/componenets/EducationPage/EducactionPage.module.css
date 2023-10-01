@@ -45,3 +45,29 @@
   min-width: 30rem;
   line-height: 1.3rem;
 }
+@media (width<800px) {
+  .title {
+    text-align: center;
+    width: 100%;
+  }
+  .EducationPage {
+    position: static;
+    height: auto;
+    text-align: center;
+  }
+  .description {
+    text-align: left;
+    min-width: 10rem;
+
+    ul li {
+      list-style-type: none;
+    }
+  }
+  .EducationElement {
+    flex-direction: column;
+  }
+  .date {
+    border-right: none;
+    border-bottom: 0.1rem solid grey;
+  }
+}

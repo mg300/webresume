@@ -1,18 +1,30 @@
 import Navbar from "./componenets/FirstPage/Navbar";
 import Background from "./componenets/FirstPage/Background-animation";
-import React, { useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Animations from "./Animations";
 import MobileWebsite from "./MobileWebsite";
 
 function App() {
-  const windowSize = useRef(window.innerWidth);
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
   console.log(windowSize.current);
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
     <>
       <Navbar></Navbar>
       <Background></Background>
-      {windowSize.current > 800 && <Animations></Animations>}
-      {windowSize.current <= 800 && <MobileWebsite />}
+      {windowSize > 800 && <Animations></Animations>}
+      {windowSize <= 800 && <MobileWebsite />}
     </>
   );
 }

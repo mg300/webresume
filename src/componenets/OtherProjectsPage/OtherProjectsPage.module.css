@@ -16,3 +16,13 @@
   display: flex;
   gap: 2rem;
 }
+@media (width<800px) {
+  .main {
+    flex-direction: column;
+  }
+  .smallProjectsPage {
+    position: static;
+    text-align: center;
+    height: auto;
+  }
+}
