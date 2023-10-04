@@ -8,14 +8,15 @@ const EducactionPage = () => {
         <div className={css.EducationElement}>
           <div className={css.date}>2020 - Present</div>
           <div className={css.main}>
-            <div className={css.degree}>Bachelor in Computer Engineering</div>
+            <div className={css.degree}>Bachelor of Computer Engineering</div>
             <div className={css.schoolName}>Opole University of Technology</div>
             <div className={css.description}>
               {" "}
               <ul>
-                <li>Solving complex matematical problems</li>
-                <li>Creating desktop applications, web applications </li>
-                <li>Working with: JavaScript, C#, Assembly Language C++, Python, SQL, HTML, CSS</li>
+                <li>Proficient in solving complex mathematical problems.</li>
+                <li>Proficient in web development technologies: HTML, CSS and SCSS.</li>
+                <li>Experienced in developing desktop and web applications. </li>
+                <li>Skilled in programming languages: JavaScript, SQL, Assembly Language and basics of C++, Python.</li>
               </ul>
             </div>
           </div>
@@ -23,15 +24,17 @@ const EducactionPage = () => {
         <div className={css.EducationElement}>
           <div className={css.date}>2016-2020</div>
           <div className={css.main}>
-            <div className={css.degree}>IT technician</div>
+            <div className={css.degree}>IT Technician</div>
             <div className={css.schoolName}>Ozimek Secondary Technical School of Computer Science</div>
             <div className={css.description}>
               {" "}
               <ul>
-                <li>Solving matematical problems</li>
-                <li>Creating web applications and database administration</li>
-                <li>Working with: JavaScript, PHP, SQL, HTML, CSS</li>
-                <li>The best student of 2019/2020</li>
+                <li>
+                  Proficient in mathematical problem-solving. Competent in programming languages: JavaScript, PHP, SQL.
+                </li>
+                <li>Skilled in developing web applications and proficient in database administration.</li>
+                <li>Proficient in web development technologies: HTML and CSS.</li>
+                <li>Recognized as the top student for the school year 2019/2020.</li>
               </ul>
             </div>
           </div>

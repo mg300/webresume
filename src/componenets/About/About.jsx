@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./About.module.css";
-import selfie from "../Images/selfie.jpg";
+import portret from "../Images/mateusz.png";
 import react from "../Images/atom.png";
 import cssImg from "../Images/css-3.png";
 import html from "../Images/html-5.png";
@@ -14,11 +14,12 @@ const About = () => {
         <div className={css.main}>
           <div>
             <p>
-              Hi! I'm Mateusz Gajda and I looking for a fist job in IT industry. orem ipsum dolor sit amet, consectetuer
-              adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
-              dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
-              quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-              arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+              Computer science is the field of my interest for several years already. I completed internship for IT
+              testers with good references. I am capable of javascript, node.js, react, html, css & typescript. The
+              specified areas of my curiosity are Front-End and Back-End, hence I would like to expand my knowledge and
+              skills as a Full-Stack Developer.<br></br>I am characterized with logical & analytical approach combined
+              with focus on details. I am also aware of script importance, fast problem solving and regularity of work
+              for effective outcomes.
             </p>
             <div className={css.imgs}>
               <img src={js} alt="stack"></img>
@@ -30,7 +31,7 @@ const About = () => {
           </div>
 
           <div>
-            <img className={css.selfie} src={selfie} alt="Selfie"></img>
+            <img className={css.selfie} src={portret} alt="Selfie"></img>
           </div>
         </div>
       </div>

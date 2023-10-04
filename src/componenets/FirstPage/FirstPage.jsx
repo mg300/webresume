@@ -7,7 +7,7 @@ const FirstPage = () => {
       <div className={css.main}>
         <div className={css.description}>
           <div className={css.title}>Mateusz Gajda</div>
-          <div className={css.subtitle}>Full stack Developer</div>
+          <div className={css.subtitle}>Full-Stack Developer</div>
         </div>
         <Logo classname="logo-big"></Logo>
       </div>
