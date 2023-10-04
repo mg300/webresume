@@ -9,8 +9,9 @@ const ProjectPage = () => {
       <div className={css.description}>
         <div className={css.title}>Gsklep</div>
         <div className={css.subtitle}>
-          Comprehensive E-Commerce Store Application is developed using TypeScript, React, and Sass on the frontend, is
-          powered by Node.js with Express, Mongoose, MongoDB on the backend.
+          I designed and developed a complete e-commerce website with a user-friendly front-end for customers and an
+          efficient administration panel connected to a Node.js API. This showcases my expertise in web development, UI
+          design, database management, and API creation.
         </div>
         <TagComponent bgColor="#007acc">Typescript</TagComponent>
         <TagComponent bgColor="#61DBFB">React</TagComponent>
