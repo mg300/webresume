@@ -23,3 +23,8 @@ code {
     font-size: 10px;
   }
 }
+* {
+  background: none;
+  background-color: transparent;
+  background-size: 0;
+}

@@ -1,4 +1,4 @@
-import { Animator, ScrollContainer, ScrollPage, batch, Sticky } from "react-scroll-motion";
+import { Animator, ScrollContainer, ScrollPage, batch } from "react-scroll-motion";
 import FirstPage from "./componenets/FirstPage/FirstPage";
 import MinesweeperPage from "./componenets/ProjectPage/MinesweeperPage";
 import GsklepPage from "./componenets/ProjectPage/GsklepPage";
@@ -12,6 +12,7 @@ function Animations() {
     out: {
       style: {
         opacity: (value) => 1.2 - value,
+        WebkitOpacity: (value) => 1.2 - value,
         transform: (p) => {
           return `translateY(${p}px)`;
         },
@@ -24,7 +25,9 @@ function Animations() {
   const moveInY = () => ({
     in: {
       style: {
+        WebkitOpacity: (value) => value * 2 - 0.6,
         opacity: (value) => value * 2 - 0.6,
+
         display: (value) => {
           if (value <= 0.2) return "none";
         },
