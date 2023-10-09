@@ -2,6 +2,10 @@
 
 This is website about my projects, experience and education. 
 
+## Live server
+
+https://portfolio.gjda.pl
+
 ## Available Scripts
 
 In the project directory, you can run:
