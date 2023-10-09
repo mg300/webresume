@@ -36,8 +36,8 @@ const ProjectPage = () => {
         <TagComponent bgColor="#F0DB4F">Javascript</TagComponent>
         <TagComponent bgColor="#264de4">CSS</TagComponent>
         <TagComponent bgColor="#e34c26">HTML</TagComponent>
-        <Button type="github" url="https://github.com/MateuszG2000/minesweeper" />
-        <Button type="live" url="https://minesweeper.gjda.pl" />
+        <Button type="github" url="https://github.com/mg300/minesweeper" />
+        <Button type="live" url="https://minesweeper.mgjda.pl" />
       </div>
       <img
         onMouseOver={() => setInt(true)}

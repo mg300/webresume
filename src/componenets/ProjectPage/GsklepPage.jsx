@@ -43,8 +43,8 @@ const ProjectPage = () => {
           CORS
         </TagComponent>
 
-        <Button type="github" url="https://github.com/MateuszG2000/gmarktshop" />
-        <Button type="live" url="https://gsklep.gjda.pl" />
+        <Button type="github" url="https://github.com/mg300/gsklep" />
+        <Button type="live" url="https://gsklep.mgjda.pl" />
       </div>
       <img className={css.img} src={gsklepImage} alt="img should be here"></img>
     </div>
