@@ -13,6 +13,7 @@ const FirstPage = () => {
       </div>
       <div className={css.pageDown}>
         <button
+          aria-label="Go down"
           onClick={() =>
             window.scrollTo({
               top: document.body.scrollHeight / 6,

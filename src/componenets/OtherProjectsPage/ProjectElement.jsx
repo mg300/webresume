@@ -10,8 +10,8 @@ const ProjectElement = (props) => {
     >
       <img src={props.img} alt="Project element"></img>
       <div>
-        <p className={css.title}>{props.title}</p>
-        <p className={css.description}>{props.children}</p>
+        <div className={css.title}>{props.title}</div>
+        <div className={css.description}>{props.children}</div>
       </div>
     </div>
   );

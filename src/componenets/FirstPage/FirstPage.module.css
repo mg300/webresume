@@ -25,12 +25,12 @@
   }
 }
 .subtitle {
-  color: grey;
+  color: #474747;
 }
 .description {
   margin-top: 1.5rem;
   background-color: white;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 /*arrow*/
 .pageDown {

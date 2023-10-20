@@ -6,7 +6,6 @@ import MobileWebsite from "./MobileWebsite";
 
 function App() {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
-  console.log(windowSize.current);
   useEffect(() => {
     const handleWindowResize = () => {
       setWindowSize(window.innerWidth);
