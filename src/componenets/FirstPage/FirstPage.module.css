@@ -5,9 +5,11 @@
   font-size: 3rem;
 }
 .FirstPage {
-  min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
   flex-direction: column;
 }
 .main {
