@@ -15,7 +15,6 @@ const ProjectPage = () => {
   const setInt = (bool) => {
     if (bool) {
       intervalId = setInterval(() => {
-        console.log(imgNum);
         setImgNum((prevImgNum) => (prevImgNum % 3) + 1);
       }, 500);
     } else if (!bool) {

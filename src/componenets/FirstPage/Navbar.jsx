@@ -3,7 +3,6 @@ import Logo from "./Logo";
 import css from "./Navbar.module.css";
 const Navbar = () => {
   const scrollTo = (el) => {
-    console.log("xd");
     window.scrollTo({
       top: (document.body.scrollHeight / 6) * el,
       behavior: "smooth",
